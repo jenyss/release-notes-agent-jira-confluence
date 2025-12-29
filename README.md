@@ -1,3 +1,3 @@
-# release-notes-agent-jira-confluence
+# Release Notes Agent - JIRA to Confluence
 
 Coming soon...
