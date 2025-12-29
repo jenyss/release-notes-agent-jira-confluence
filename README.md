@@ -1,1 +1,1 @@
-# release-notes-autogen-jira-confluence
+# release-notes-agent-jira-confluence
