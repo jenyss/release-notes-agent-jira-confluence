@@ -8,11 +8,6 @@ _Powered by Google ADK & Atlassian MCP_
 
 If you have any questions or would like to collaborate, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jenya-stoeva-60477249/). You're more than welcome!
 
-<h1 style="text-align: center;">Release Notes Agent - Jira to Confluence</h1>
-<p style="text-align: center;"><em>Powered by Google ADK & Atlassian MCP</em></p>
-
-This agent automates release notes creation from Jira work items and publishes them to Confluence.
-
 ## How It Works:
 **User**
 1. Provides JQL parameter - "Affected Version"
