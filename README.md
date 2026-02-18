@@ -89,6 +89,6 @@ This agent automates release notes creation from Jira work items and publishes t
 **How to get Confluence space and page IDs**
 ```
 Use: https://<confluence-site>.atlassian.net/wiki/api/v2/spaces?keys=<space-key>
-Example: https://marmind-knowledgebase.atlassian.net/wiki/api/v2/spaces?keys=KB
+Example: https://jenys.atlassian.net/wiki/api/v2/spaces?keys=Jeny
 ```
 
