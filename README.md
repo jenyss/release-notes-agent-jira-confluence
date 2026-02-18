@@ -91,4 +91,29 @@ This agent automates release notes creation from Jira work items and publishes t
 Use: https://<confluence-site>.atlassian.net/wiki/api/v2/spaces?keys=<space-key>
 Example: https://jenys.atlassian.net/wiki/api/v2/spaces?keys=Jeny
 ```
-
+```
+{
+  "results": [
+    {
+      "spaceOwnerId": "6019b68b3b1af00069d7ee60",
+      "homepageId": "98306",
+      "createdAt": "2022-02-25T07:43:26.965Z",
+      "authorId": "6019b68b3b1af00069d7ee60",
+      "description": null,
+      "icon": null,
+      "status": "current",
+      "name": "Jeny",
+      "key": "JENY",
+      "id": "98305",
+      "type": "global",
+      "_links": {
+        "webui": "/spaces/JENY"
+      },
+      "currentActiveAlias": "JENY"
+    }
+  ],
+  "_links": {
+    "base": "https://jenys.atlassian.net/wiki"
+  }
+}
+```
