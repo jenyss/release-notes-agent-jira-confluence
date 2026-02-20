@@ -8,7 +8,7 @@ _Powered by Google ADK & Atlassian MCP_
 
 If you have any questions or would like to collaborate, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jenya-stoeva-60477249/). You're more than welcome!
 
-### How It Works: 
+## How It Works: 
 
 **The two examples show how the same workflow can be implemented with and without MCP. When you have a well-defined workflow with clear, ordered steps, you can skip the MCP overhead and cost and use the agent purely as a step executor. The second example replaces the MCP Confluence call with a direct API call via atlassian-python-api, which is also the safer and more controlled approach when writing to external systems.**
 
@@ -65,13 +65,13 @@ release-notes-agent-jira-confluence-python-api-example
 └──────────────────────────────┴───────────────────────────────┘
 ```
 
-### Prerequisites:
+## Prerequisites:
 - Python 3.10+ with virtual environment
 - Node.js 18+ - Required for MCP servers (npx)
 - Atlassian Cloud Access - Browser authentication triggered on first run
 - Environment Variables - GOOGLE_API_KEY in .env file
 
-### Usage:
+## Usage:
     await chat(affected_version="Jan-2026")
 
 **How to get Confluence space and page IDs**
