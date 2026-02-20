@@ -8,7 +8,7 @@ _Powered by Google ADK & Atlassian MCP_
 
 If you have any questions or would like to collaborate, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jenya-stoeva-60477249/). You're more than welcome!
 
-### How It Works:
+### How It Works: _release-notes-agent-jira-confluence_
 **User**
 1. Provides JQL parameter - "Affected Version"
 
