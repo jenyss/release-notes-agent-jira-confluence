@@ -39,7 +39,9 @@ release-notes-agent-jira-confluence
 └───────────────────────────┴─────────────────────────────────┘
 ```
 
-_**2. release-notes-agent-jira-confluence-python-api-example**_
+```
+release-notes-agent-jira-confluence-python-api-example
+```
 
 1. Provides JQL parameter - "Affected Version"
 
