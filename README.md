@@ -38,7 +38,7 @@ release-notes-agent-jira-confluence
 │  └─────────────────────┘  │   └─────────────────────────┘   │
 └───────────────────────────┴─────────────────────────────────┘
 ```
-
+---
 ```
 release-notes-agent-jira-confluence-python-api-example
 ```
