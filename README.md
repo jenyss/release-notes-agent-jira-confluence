@@ -8,7 +8,10 @@ _Powered by Google ADK & Atlassian MCP_
 
 If you have any questions or would like to collaborate, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jenya-stoeva-60477249/). You're more than welcome!
 
-### How It Works: _release-notes-agent-jira-confluence_
+### How It Works: 
+
+_**release-notes-agent-jira-confluence**_
+
 **User**
 1. Provides JQL parameter - "Affected Version"
 
@@ -16,7 +19,7 @@ If you have any questions or would like to collaborate, feel free to reach out t
 1. Retrieves issues with affected_version="Jan-2026" from Jira using JQL query via Atlassian MCP
 2. Extract data from issues - Name, Description, ID, Link, Project, ...
 3. Generates release notes for each ticket and stores everything in tool_context
-4. Publish to Confluence - Creates a formatted Markdown page via Atlassian MCP
+4. **Publish to Confluence - Creates a formatted Markdown page via Atlassian MCP**
 
 ### Architecture:
 ```
@@ -32,9 +35,29 @@ If you have any questions or would like to collaborate, feel free to reach out t
 └───────────────────────────┴─────────────────────────────────┘
 ```
 
-### Local Tools:
-- store_ticket_in_context: Saves each processed ticket to tool_context
-- format_confluence_content: Reads tickets from context and formats as Markdown
+_**release-notes-agent-jira-confluence**_
+
+1. Provides JQL parameter - "Affected Version"
+
+**Agent**
+1. Retrieves issues with affected_version="Jan-2026" from Jira using JQL query via Atlassian MCP
+2. Extract data from issues - Name, Description, ID, Link, Project, ...
+3. Generates release notes for each ticket and stores everything in tool_context
+4. **Publish to Confluence - Creates a formatted Atlassian Document Format (ADF) page directly via atlassian-python-api**
+
+### Architecture:
+```
+┌──────────────────────────────────────────────────────────────┐
+│                       SequentialAgent                        │
+│                    (ReleaseNotesWorkflow)                    │
+├──────────────────────────────┬───────────────────────────────┤
+│     TicketProcessorAgent     │   ConfluencePublisherAgent    │
+│  ┌────────────────────────┐  │  ┌─────────────────────────┐  │
+│  │ Atlassian MCP          │  │  │ publish_to_confluence   │  │
+│  │ store_ticket_in_context│  │  │                         │  │
+│  └────────────────────────┘  │  └─────────────────────────┘  │
+└──────────────────────────────┴───────────────────────────────┘
+```
 
 ### Prerequisites:
 - Python 3.10+ with virtual environment
