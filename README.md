@@ -12,7 +12,7 @@ If you have any questions or would like to collaborate, feel free to reach out t
 
 **The two examples show how the same workflow can be implemented with and without MCP. When you have a well-defined workflow with clear, ordered steps, you can skip the MCP overhead and cost and use the agent purely as a step executor. The second example replaces the MCP Confluence call with a direct API call via atlassian-python-api, which is also the safer and more controlled approach when writing to external systems.**
 
-1. _**release-notes-agent-jira-confluence**_
+1. _**1. release-notes-agent-jira-confluence**_
 
 **User**
 1. Provides JQL parameter - "Affected Version"
