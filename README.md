@@ -1,4 +1,4 @@
-# Release Notes Agent - JIRA to Confluence.
+# Release Notes Agent - JIRA to Confluence
 
 _Powered by Google ADK & Atlassian MCP_
 
